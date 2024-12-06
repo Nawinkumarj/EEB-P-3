@@ -1931,6 +1931,7 @@ clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
 .box-dm img{
   border-radius: 15px;
+  object-fit: cover;
 }
 .centered {
   top: 80px !important;
