@@ -1,0 +1,158 @@
+ <div class="row masonry-wrap">
+
+            <div class="masonry">
+    
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="images/3 1.png" class="thumb-link" title="Therapeutic" data-size="1050x700">
+                                <img src="images/3 1.png" 
+                                     srcset="images/3 1.png 1x, images/3 1.png 2x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Therapeutic
+                            </h3>
+                            <p class="item-folio__cat">
+                                I-Soul Pod
+                            </p>
+                        </div>
+
+                       
+
+                        <div class="item-folio__caption">
+                            <p>Discover the transformative power of I- Soul Pod – Where Serenity Meets Innovation.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- end masonry__brick -->
+    
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="images/4 1.png" class="thumb-link" title="Woodcraft" data-size="1050x700">
+                                <img src="images/4 1.png" 
+                                     srcset="images/4 1.png 1x, images/4 1.png 2x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Meditative escape
+                            </h3>
+                            <p class="item-folio__cat">
+                                I-Soul Pod
+                            </p>
+                        </div>
+
+                        <!--a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            <i class="icon-link"></i>
+                        </a-->
+
+                        <div class="item-folio__caption">
+                            <p>Discover the transformative power of I- Soul Pod – Where Serenity Meets Innovation..</p>
+                        </div>
+
+                    </div>
+                </div> <!-- end masonry__brick -->
+        
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="images/5 1.png" class="thumb-link" title="The Beetle Car" data-size="1050x700">
+                                <img src="images/5 1.png"
+                                     srcset="images/5 1.png 1x, images/5 1.png 2x" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                soundproof
+                            </h3>
+                            <p class="item-folio__cat">
+                                I-Soul Pod
+                            </p>
+                        </div>
+
+                        <!--a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            <i class="icon-link"></i>
+                        </a-->
+
+                        <div class="item-folio__caption">
+                            <p>Discover the transformative power of I- Soul Pod – Where Serenity Meets Innovation.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- end masonry__brick -->
+        
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="images/gallery-image-4.png" class="thumb-link" title="Grow Green" data-size="1050x700">
+                                <img src="images/gallery-image-4.png" 
+                                     srcset="images/gallery-image-4.png , images/gallery-image-4.png " alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Stimulation therapy
+                            </h3>
+                            <p class="item-folio__cat">
+                                I-Soul Pod
+                            </p>
+                        </div>
+
+                        <!--a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            <i class="icon-link"></i-->
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>Discover the transformative power of I- Soul Pod – Where Serenity Meets Innovation.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- end masonry__brick -->
+    
+             
+                 <!-- end masonry__brick -->
+        
+                <div class="masonry__brick" data-aos="fade-up">
+                    <div class="item-folio">
+                            
+                        <div class="item-folio__thumb">
+                            <a href="images/FT-1.jpg" class="thumb-link" title="Palmeira" data-size="1050x700">
+                                <img src="images/FT-1.jpg"
+                                     srcset="images/FT-1.jpg , images/FT-1.jpg " alt="">
+                            </a>
+                        </div>
+
+                        <div class="item-folio__text">
+                            <h3 class="item-folio__title">
+                                Relaxation
+                            </h3>
+                            <p class="item-folio__cat">
+                                I-Soul Pod
+                            </p>
+                        </div>
+
+                        <!--a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                            <i class="icon-link"></i-->
+                        </a>
+
+                        <div class="item-folio__caption">
+                            <p>Discover the transformative power of I- Soul Pod – Where Serenity Meets Innovation.</p>
+                        </div>
+
+                    </div>
+                </div> <!-- end masonry__brick -->
+    
+            </div> <!-- end masonry -->
+
+        </div> 
