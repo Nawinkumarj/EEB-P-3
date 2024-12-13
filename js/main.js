@@ -312,18 +312,3 @@ let autoplay = setInterval(() => {
     next.click();
 }, 5000);
 
-
-
-
-
-
-
-
-
-
- 
-  
-
-
-
-

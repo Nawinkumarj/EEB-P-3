@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Gurajada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://use.typekit.net/bzo0lta.css");
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
   --border-color: #fff5;
   --w-image: 500px;
   --calculate: calc(3 /2);
   --primary-color: #00509e;
+
 }
 body {
   margin: 0;
@@ -397,8 +403,6 @@ textarea {
 }
 
 .page-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../img/bg.jpg) center center no-repeat;
   background-size: cover;
   object-fit: cover;
 }
@@ -418,6 +422,17 @@ textarea {
   width: 100%;
   padding-bottom: 50px;
 }
+.home-abt p{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.abt-inner {
+  margin-top: -20px;
+}
+
 .abt-inner-img {
   border-radius: 50%;
   width: 70%;
@@ -429,13 +444,13 @@ textarea {
   max-width: 80%;
   max-height: 100%;
   bottom: 0;
-  transition: transform 20s ease-in-out;
-  transform: rotate(360deg);
+  animation: alternateRotate 30s infinite;
 }
+
 @media (max-width:500px){
   .abt-inner-img1{
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
   }
   .abt-inner-img {
     border-radius: 50%;
@@ -453,17 +468,17 @@ textarea {
     padding-bottom: 0px;
   }
 }
-
-/* @keyframes rotate {
+@keyframes alternateRotate {
   0% {
     transform: rotate(0deg);
   }
-  100% {
-    transform: rotate(360deg);
+  50% {
+    transform: rotate(360deg); 
   }
-} */
-
-
+  100% {
+    transform: rotate(0deg);
+  }
+}
 /* home-About end*/
 .abtimg1 {
   object-fit: cover;
@@ -542,6 +557,10 @@ textarea {
   text-align: justify;
   color: rgb(44, 40, 40);
   font-weight: 550;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 @media (max-width:500px){
@@ -605,6 +624,7 @@ textarea {
   align-items: center;
   gap: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .about-box span {
@@ -730,6 +750,10 @@ textarea {
 }
 .core-val h1{
   color: #1354ae;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 .profile-cards {
   display: flex;
@@ -784,16 +808,28 @@ textarea {
 }
 .profile-cards .card .card-details-social {
   display: flex;
-  color: rgb(236, 226, 226);
+  color: rgb(243, 236, 236);
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .future-goal h1 {
   color: #1354ae;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  
 }
 
 .future-goal-lt p {
   text-align: justify;
   font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size:20px;
 }
 
 .future-goal-rt {
@@ -1097,6 +1133,10 @@ textarea {
 /* home service card start */
 .service-cd h1{
   color: var(--primary-color);
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 .top-cont h5{
   background: linear-gradient(
@@ -1124,6 +1164,10 @@ textarea {
   padding: 0px 10px;
   width: 100%;
   height: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight:500;
   transition: opacity 0.3s ease-in-out; 
 }
 
@@ -1395,11 +1439,13 @@ textarea {
 .chooseUs {
   text-align: center;
 }
-.chooseUs h3{
+.chooseUs h1{
   color: var(--primary-color);
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
-
-
 .chooseUs p {
   text-align: justify;
 }
@@ -1512,8 +1558,8 @@ b {
 
 .product-page .box {
   position: relative;
-  width: 19.75rem;
-  height: 19.75rem;
+  width: 25rem;
+  height: 25rem;
   border-radius: 0.625rem;
   display: flex;
   justify-content: center;
@@ -1592,7 +1638,7 @@ b {
   transform: rotate(-15deg);
 }
 .product-page .box:hover .glass {
-  transform: rotate(13deg);
+  transform: rotate(14deg);
   scale: 1;
   opacity: 1;
 }
@@ -1665,7 +1711,11 @@ b {
 .cta:active {
   transform: scale(0.95);
 }
-
+@media(max-width:600px){
+  .product-page .container{
+    overflow-x: hidden;
+  }
+}
 /* popup box */
 .popup {
   position: sticky;
@@ -1818,6 +1868,17 @@ clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   width: 60%;
   z-index: 99; 
   font-size: 50px;
+
+}
+.contact-img  h2 span{
+  font-family: "acumin-pro-wide", sans-serif;
+  font-style: normal;
+}
+
+.lap-contact {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 .contact-btn {
   background-color: #005bea;
@@ -1850,6 +1911,13 @@ clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     z-index: 99;
   }
 }
+@media (max-width:600px){
+  .contact-img  h2{
+    width: 95%;
+    font-size: 22px;
+    z-index: 99;
+  }
+}
 
 /* Dome Section */
 .domeVideo {
@@ -1868,6 +1936,10 @@ clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 .domeVideo h1{
   color: var(--primary-color);
   padding: 30px 0px 10px 0px;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 .domeVideo p{
   padding: 5px 100px;
@@ -1999,11 +2071,6 @@ clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   transform: scale(1); 
 }
 
-
-/* body.no-scroll {
-  overflow: hidden;
-} */
-
 /* Responsive Design */
 @media(min-width:600px) and (max-width: 768px) {
   .container-dm {
@@ -2011,12 +2078,10 @@ clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     max-width: 350px;
     margin: 30px auto;
   }
-
   .button-container {
     width: 100%;
     height: 120px;
   }
-
   .box-dm {
     width: 80%;
     height: 220px !important;
@@ -2031,13 +2096,11 @@ clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     left: -50px;
     z-index: 2;
   }
-  
   .box-dm:nth-of-type(2) {
     top: -0px;
     left: 5px;
     z-index: 1;
   }
-  
   .box-dm:nth-of-type(3) {
     top: 100px;
     left: 110px;
@@ -2049,13 +2112,11 @@ clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     margin-left: -100px;
     margin-top: 200px;
   }
-
   .btn-dm svg {
     width: 10px;
     height: 12px;
   }
   .overlay-dm {
-
     margin-top: -70px;
 
   }
@@ -2082,7 +2143,7 @@ clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   }
   .centered {
     top: 20% !important;
-    left: 10% !important;
+    left: 0% !important;
 }
   .box-dm {
     width: 100%;
@@ -2263,7 +2324,7 @@ footer {
   margin-top: 0px;
 }
 
-@media (max-width: 658px) {
+@media (max-width: 768px) {
   footer {
     padding-top: 80px !important;
     padding: 0;
@@ -2282,6 +2343,20 @@ footer {
     width: 45px;
     height: 45px;
   }
+  .foot-img img {
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+}
+.footerimg img {
+  position: absolute;
+  width: 250px;
+  left:25%;
+  height: 80px;
+  top:0px;
+
+}
 }
 
 @media (max-width: 500px) {
@@ -2415,7 +2490,6 @@ footer {
 .card-body {
   text-align: center;
 }
-
 .card-button {
   align-items: center;
   appearance: none;
@@ -2451,26 +2525,21 @@ footer {
   will-change: box-shadow, transform;
   font-size: 18px;
 }
-
 .card-button:focus {
   box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
 }
-
 .card-button:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
   transform: translateY(-2px);
   color: white;
 }
-
 .card-button:active {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
 }
-
 /* Engineers End */
-
 /* Team leadres start */
 .member-img img {
   border-radius: 300px;
@@ -2483,7 +2552,6 @@ footer {
   display: flex;
   align-items: center;
 }
-
 /* Team leaders end */
 
 /* event page start */
@@ -3200,6 +3268,11 @@ background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 }
 .slide .content p {
   text-align: start;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight:500;
+  
 }
 .slide.current .content {
   opacity: 1;
@@ -3283,6 +3356,10 @@ background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 }
 .imtof-content {
   text-align: justify;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 /* imtof end */
 
@@ -3433,6 +3510,11 @@ background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 
 .para p {
   padding: 100px 20px 20px 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
 }
 
 .quote {
@@ -3475,9 +3557,14 @@ background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 }
 .pt-txt h1{
   color: var(--primary-color);
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 .pt-txt p{
   color: rgb(0, 0, 0);
+  
 }
 .c-card-testimonial {
   /* Profile styles */
@@ -3521,6 +3608,10 @@ background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 .c-card-testimonial__description {
   padding-right: 25px;
   transform: translateX(-50px);
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight:600;
 }
 
 @media screen and (max-width: 768px) {
@@ -3619,6 +3710,12 @@ background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 @media screen and (max-width: 768px) {
   .c-testimonials__item {
     flex-direction: column;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .swiper-wrapper {
+    padding: 0;
+    margin: 0;
   }
 }
 .c-testimonials__item.swiper-slide-active .c-card-testimonial__profile .c-card-testimonial__image {
@@ -3770,6 +3867,10 @@ background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
   line-height: 0.9;
   color: #00509e;
   text-transform: uppercase;
+   font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .text h3 {
@@ -3781,6 +3882,10 @@ background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
   width: 700px;
   color: #000000;
   text-align: justify;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight:0;
 }
 
 .spider{
@@ -3943,7 +4048,13 @@ background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 .fa-chevron-down {
   font-size: 19px;
 }
-
+@media (min-width:550px) and (max-width:1022px) {
+  .teamSlideBtn img {
+    width: 110px;
+    height: 110px;
+    object-position: top;
+  }
+}
 @media (max-width: 550px) {
   .teamSlideBtn img {
     width: 110px;
@@ -4046,13 +4157,24 @@ background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 
 .hero-carousel .list .item .main-content .content {
   padding: 150px 20px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-carousel .list .item .main-content .content h2 {
   font-size: 4rem;
-  font-family: 'Aboreto';
+  font-family: "Lora", sans-serif;
+  font-style: normal;
 }
+@media (max-width:600px){
+  .hero-carousel .list .item .main-content .content h2 {
+    font-size: 3rem !important;
+    font-style: normal;
+  }
 
+}
 .hero-carousel .list .item .main-content .content .price {
   font-family: 'Aboreto';
   font-size: 3rem;
@@ -4076,7 +4198,8 @@ background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 }
 
 .hero-carousel .description {
-  text-align: justify;
+  text-align: justify; 
+  font-family: sans-serif;
 }
 
 .hero-carousel .list .main-content .content .addToCard {
