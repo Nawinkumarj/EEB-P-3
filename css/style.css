@@ -1878,6 +1878,7 @@ clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 .lap-contact {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 50px;
 }
 .contact-btn {

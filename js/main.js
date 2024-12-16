@@ -182,7 +182,7 @@ $(document).ready(function () {
         },
         lname: {
           required: true,
-          minlength: 2
+          minlength: 1
         },
         phone: {
           required: true,
