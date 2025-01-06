@@ -4,6 +4,10 @@
 @import url("https://use.typekit.net/bzo0lta.css");
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 :root {
   --border-color: #fff5;
@@ -20,6 +24,11 @@ body {
 html{
   overflow-x: hidden !important;
 }
+
+p {
+  font-family: "Josefin Sans", sans-serif;
+}
+
 .fw-medium {
   font-weight: 600 !important;
 }
@@ -431,6 +440,7 @@ textarea {
 
 .abt-inner {
   margin-top: -20px;
+  width: 70%;
 }
 
 .abt-inner-img {
@@ -468,6 +478,19 @@ textarea {
     padding-bottom: 0px;
   }
 }
+
+@media (max-width: 768px) {
+  .home-abt {
+    height: 1100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-abt {
+    height: 1150px;
+  }
+}
+
 @keyframes alternateRotate {
   0% {
     transform: rotate(0deg);
@@ -554,7 +577,7 @@ textarea {
 .description {
   font-size: .9rem;
   line-height: 1.6;
-  text-align: justify;
+  text-align: start;
   color: rgb(44, 40, 40);
   font-weight: 550;
   font-family: "Josefin Sans", sans-serif;
@@ -592,8 +615,8 @@ textarea {
   display:none;
 }
 .about-circle {
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   background: #ebeef0fa;
   border:5px solid #d3dee2;
@@ -607,13 +630,13 @@ textarea {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 10;
   position: absolute;
-  left: -10%;
-  top: 25%;
+  left: -20%;
+  top: 30%;
 }
 
 .about-box {
   position: absolute;
-  width: 200px;
+  width: 250px;
   background-color: rgba(255, 255, 255, 0.89);
   color: #333;
   font-size: 1rem;
@@ -641,7 +664,7 @@ textarea {
 }
 
 .about-box-1 {
-  top: 50px;
+  top: 100px;
   left: 10px;
   background: #e8eceecc;
   border:2px solid #d3dee2;
@@ -650,8 +673,8 @@ textarea {
 }
 
 .about-box-2 {
-  top: 150px;
-  left: 90px;
+  top: 180px;
+  left: 50px;
   background: #e8eceecc;
   border:2px solid #d3dee2;
   outline:2px solid #ACB6BA;
@@ -659,7 +682,7 @@ textarea {
 }
 
 .about-box-3 {
-  top: 230px;
+  top: 245px;
   left: 10px;
   background: #e8eceecc;
   border:2px solid #d3dee2;
@@ -720,13 +743,13 @@ textarea {
     height: 100px;
     font-size: 1rem;
     font-weight: bold;
-    left: 0%;
-    top: 29%;
+    left: -5%;
+    top: 38%;
   }
   
   .about-box {
     position: absolute;
-    width: 160px;
+    width: 200px;
     background-color: rgba(255, 255, 255, 0.89);
     color: #333;
   }
@@ -735,6 +758,21 @@ textarea {
     width: 25px;
     height: 25px;
     font-size: 1rem;
+  }
+
+  .about-box-1 {
+    top: 120px;
+    left: 0;
+  }
+
+  .about-box-2 {
+    top: 200px;
+    left: 70px;
+  }
+
+  .about-box-3 {
+    top: 260px;
+    left: 0;
   }
 }
 @media(min-width:1000px) and (max-width:1250px){
@@ -1277,6 +1315,7 @@ textarea {
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  
 }
 
 .card-popup {
@@ -1292,6 +1331,11 @@ textarea {
   background-position: center;
   background-size: cover;
   top:40px;
+
+  background-color: #00509e;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px
 }
 
 .card-popup h2 {
@@ -1546,25 +1590,19 @@ b {
   padding-top: 3em;
 }
 
-.product-page .container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  padding: 3.25em 0 3em;
-}
-
 .product-page .box {
   position: relative;
-  width: 25rem;
-  height: 25rem;
+  width: 90%;
+  height: 30rem;
   border-radius: 0.625rem;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.5s;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .product-page .box .imgBox {
@@ -2066,10 +2104,14 @@ clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   padding: 0;
   transform: scale(0.8); 
   transition: transform 0.5s ease-in-out; 
-}
+}p
 
 .overlay-dm.active video {
   transform: scale(1); 
+}
+
+.video img {
+  width: 100%;
 }
 
 /* Responsive Design */
@@ -2246,7 +2288,7 @@ footer {
   width: 100%;
   right: 0;
   bottom: -12px;
-  z-index: -1;
+  z-index: -2;
 }
 .foot-img img{
   height: 100%;
@@ -2322,7 +2364,8 @@ footer {
   padding-top: 5px;
   text-align: center;
   color: white;
-  margin-top: 0px;
+  position: relative;
+  z-index: 3;
 }
 
 @media (max-width: 768px) {
@@ -2580,6 +2623,45 @@ footer {
   letter-spacing: 70px;
   border: 5px solid black;
 }
+
+.kreepaCard {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eventCards {
+  width: 95%;
+  margin-bottom: 30px;
+}
+
+.owl-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.owl-dot {
+  background-color: rgb(194, 194, 194);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.owl-dot.active {
+  background-color: rgb(35, 132, 243) !important;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
 @media (min-width: 501px) and (max-width: 991px) {
   .event-buttons .event-btn {
     font-size: 40px;
@@ -2669,11 +2751,12 @@ footer {
 
 .projcard-img {
   position: absolute;
-  height: 300px;
+  height: 100%;
   width: 400px;
   top: 0;
   left: 0;
   transition: transform 0.2s ease;
+  object-fit: cover;
 }
 
 .projcard:nth-child(2n) .projcard-img {
@@ -4072,6 +4155,12 @@ background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
   }
 }
 
+@media (min-width: 1650px) {
+  .swiper-slide img {
+    transform: scale(1) !important;
+  }
+}
+
 /*  */
 
 .hero-carousel {
@@ -4165,8 +4254,10 @@ background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 }
 
 .hero-carousel .list .item .main-content .content h2 {
-  font-size: 4rem;
-  font-family: "Lora", sans-serif;
+  font-size: 6rem;
+  letter-spacing: 3px;
+  font-family: "Bebas Neue", sans-serif;
+  /* font-family: "Righteous", sans-serif; */
   font-style: normal;
 }
 @media (max-width:600px){
@@ -4428,4 +4519,15 @@ background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
   -webkit-transform: translateY(-13px);
           transform: translateY(-13px);
   box-shadow: 0 35px 90px 4px rgba(0, 0, 0, 0.3), inset 0px 0 0 3px #000;
+}
+
+/* KREEPA START */
+
+.kreepaPARA p {
+  font-size: 18px;
+  margin-top: 70px;
+}
+
+.kreepaMask {
+  font-size: 100px;
 }

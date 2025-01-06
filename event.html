@@ -67,7 +67,7 @@
             <div class="h-100 d-inline-flex align-items-center">
                 <a class="btn btn-sm-square bg-white text-primary me-1 social-icon linked" href="https://www.linkedin.com/company/eeb-engineering-design-and-consultancy-services/mycompany/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a class="btn btn-sm-square bg-white text-primary me-1 social-icon igram" href="https://www.instagram.com/eebengineering?igsh=MzZ4YmJ4MjAxcHlt" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a class="btn btn-sm-square bg-white text-primary me-1 social-icon faceb" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="btn btn-sm-square bg-white text-primary me-1 social-icon faceb" href="https://www.facebook.com/people/EEB-Engineering-Design-and-Consultancy-Services/61558963367617/"  target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
             </div>
         </div>
     </div>
@@ -132,17 +132,17 @@
     <!-- Page Header End -->
 
     <div class="container">
-        <div class="row">
-            <div class=" col-lg-6 col-sm-12 mt-5 wow rotateInUpLeft" data-wow-duration="2s" data-wow-delay="0.5s">
+        <div class="row event-carousel owl-carousel">
+            <div class="eventCards mt-5 wow " data-wow-duration="2s" data-wow-delay="0.5s">
                 <div class="card event-main"> 
                     <a href="lohana.html">
                         <img src="img/libfExpo.png" class="card-img-top" alt="...">
                         <div class="card-body  mt-n3">
                             <h2 class="card-title mt-3">LIBF</h2>
                             <i class="fa-regular fa-circle-right"></i>
-                            <div class="container">
-                                <div class="row">
-                                    <p class="col-3 cont-1 p-2"> JAN<br>18-21 <br>2024</p>
+                            <div>
+                                <div class="kreepaCard">
+                                    <p class="cont-1 p-2"> JAN<br>18-21 <br>2024</p>
                                     <p class="col-9 cont-2 text-justify text-sm-start">
                                         The LIBF Expo 2024, held at the Helipad Exhibition Centre in Gandhinagar, Gujarat, India, showcased global cooperation and business prowess.
                                     </p>
@@ -152,16 +152,16 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12 mt-5 wow rotateInUpRight" data-wow-duration="2s" data-wow-delay="1s">
+            <div class="eventCards mt-5 wow " data-wow-duration="2s" data-wow-delay="1s">
                 <div class="card event-main"> 
                     <a href="imtof.html">
                         <img src="img/expo-imtof.png" class="card-img-top" alt="...">
                         <div class="card-body  mt-n3">
                         <h2 class="card-title mt-3">IMTOF</h2>
                         <i class="fa-regular fa-circle-right"></i>
-                            <div class="container">
-                                <div class="row">
-                                    <p class="col-lg-3  cont-1 p-2"> APRIL <br> 18-22 <br> 2024</p>
+                            <div>
+                                <div class="kreepaCard">
+                                    <p class="cont-1 p-2"> APRIL <br> 18-22 <br> 2024</p>
                                     <p class="col-lg-9 col-sm-6 cont-2 text-justify">
                                         The MMTMA has been instrumental in advancing the machine tools industry through its biennial event, IMTOF, introducing cutting-edge global technologies.
                                     </p>
@@ -171,18 +171,18 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12 mt-5 wow rotateInUpRight" data-wow-duration="2s" data-wow-delay="1s">
+            <div class="eventCards mt-5 wow " data-wow-duration="2s" data-wow-delay="1s">
                 <div class="card event-main"> 
                     <a href="kreepa.html">
-                        <img src="https://placehold.co/636x355" class="card-img-top" alt="...">
+                        <img src="img/kreepaBanner.png" class="card-img-top" alt="...">
                         <div class="card-body  mt-n3">
                         <h2 class="card-title mt-3">KREEP EXPO</h2>
                         <i class="fa-regular fa-circle-right"></i>
-                            <div clas="container">
-                                <div class="row">
-                                    <p class="col-lg-3  cont-1 p-2"> APRIL <br> 18-22 <br>2024</p>
+                            <div>
+                                <div class="kreepaCard">
+                                    <p class="cont-1 p-2"> APRIL <br> 18-22 <br>2024</p>
                                     <p class="col-lg-9 col-sm-6 cont-2 text-justify">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, reiciendis nobis consequuntur quae incidunt recusandae laboriosam obcaecati saepe nulla aliquam? Saepe voluptatem, reprehenderit eos eius eveniet soluta repudiandae aliquid vel.
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, reiciendis nobis consequuntur quae incidunt recusandae laboriosam obcaecati saepe nulla aliquam?
                                     </p>
                                 </div>
                             </div>
@@ -222,7 +222,7 @@
                             <i class="fa-brands fa-instagram"></i>
                         </div>
                     </a>
-                    <a href="https://www.facebook.com/profile.php?id=61558963367617" target="_blank">
+                    <a href="https://www.facebook.com/people/EEB-Engineering-Design-and-Consultancy-Services/61558963367617/" target="_blank">
                         <div class="fb">
                             <i class="fa-brands fa-facebook"></i>
                         </div>
@@ -265,6 +265,25 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.event-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                dots: true,  // This ensures the dots are enabled
+                autoplay: true,
+                autoplayTimeout: 5000,
+                responsive: {
+                    0: { items: 1 },
+                    1024: { items: 2 }
+                }
+            });
+
+            new WOW().init();
+        });
+    </script>
+
 </body>
 
 </html>

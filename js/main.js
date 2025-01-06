@@ -312,3 +312,6 @@ let autoplay = setInterval(() => {
     next.click();
 }, 5000);
 
+// Copy Right Year
+
+$('#year').html(new Date().getFullYear());
