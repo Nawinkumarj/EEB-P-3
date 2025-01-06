@@ -549,8 +549,9 @@ textarea {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: start;
   clip-path: circle(75.0% at 25% 47%);
+  gap: 105px;
 }
 
 /* About Card */
@@ -561,6 +562,7 @@ textarea {
   width: 500px;
   color: #003366;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
 }
 .about-card h1 {
   font-size: 2rem;
@@ -615,8 +617,8 @@ textarea {
   display:none;
 }
 .about-circle {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   background: #ebeef0fa;
   border:5px solid #d3dee2;
@@ -636,13 +638,13 @@ textarea {
 
 .about-box {
   position: absolute;
-  width: 250px;
+  width: 300px;
   background-color: rgba(255, 255, 255, 0.89);
   color: #333;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 15px 25px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -665,7 +667,7 @@ textarea {
 
 .about-box-1 {
   top: 100px;
-  left: 10px;
+  left: 40px;
   background: #e8eceecc;
   border:2px solid #d3dee2;
   outline:2px solid #ACB6BA;
@@ -674,7 +676,8 @@ textarea {
 
 .about-box-2 {
   top: 180px;
-  left: 50px;
+  left: 80px;
+  width: 250px !important;
   background: #e8eceecc;
   border:2px solid #d3dee2;
   outline:2px solid #ACB6BA;
@@ -682,8 +685,8 @@ textarea {
 }
 
 .about-box-3 {
-  top: 245px;
-  left: 10px;
+  top: 260px;
+  left: 60px;
   background: #e8eceecc;
   border:2px solid #d3dee2;
   outline:2px solid #ACB6BA;
@@ -1315,7 +1318,6 @@ textarea {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  
 }
 
 .card-popup {
@@ -1331,11 +1333,6 @@ textarea {
   background-position: center;
   background-size: cover;
   top:40px;
-
-  background-color: #00509e;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px, transparent 0);
-  background-size: 30px 30px;
-  background-position: -5px -5px
 }
 
 .card-popup h2 {
@@ -2275,7 +2272,6 @@ footer {
  display: flex;
  justify-content: space-between;
  width: 300px;
- margin-top: 30px;
 }
 .footerNav .foot-item{
   display: flex;
@@ -2306,6 +2302,14 @@ footer {
 .footerIcon {
   display: flex;
   margin: 10px;
+}
+
+@media (min-width: 768px) {
+  .footerIcon,
+  .footerNav
+   {
+    margin-top: -100px;
+  }
 }
 
 .footerIcon div {
