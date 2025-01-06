@@ -958,6 +958,9 @@ section,
   .about .nav-link {
     font-size: 16px;
   }
+  .about .tab-content p{
+    text-align: justify;
+  }
 }
 
 .about .tab-content h4 {
@@ -978,6 +981,18 @@ section,
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
+@media (max-width:500px){
+  .nav-tabs .nav-item {
+    margin: 8px 0px 0px 0px;
+   }
+  .nav-tabs .nav-item .nav-link{
+   padding: 10px;
+   border-radius: 5px;
+  }
+  .nav-tabs .nav-item .nav-link h4{
+    font-size: 13px;
+  }
+}
 .features .nav-tabs {
   border: 0;
 }
@@ -1066,6 +1081,19 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+@media(max-width:500px){
+  .services .details {
+    background: color-mix(in srgb, var(--surface-color), transparent 5%);
+    padding: 50px 30px;
+    margin: -100px 30px 0 30px;
+    transition: all ease-in-out 0.3s;
+    position: relative;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
+    min-height: 300px;
+  }
+}
 .services .img {
   border-radius: 8px;
   overflow: hidden;

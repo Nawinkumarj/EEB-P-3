@@ -549,9 +549,8 @@ textarea {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: space-evenly;
   clip-path: circle(75.0% at 25% 47%);
-  gap: 105px;
 }
 
 /* About Card */
@@ -562,7 +561,6 @@ textarea {
   width: 500px;
   color: #003366;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  margin-left: 20px;
 }
 .about-card h1 {
   font-size: 2rem;
@@ -579,7 +577,7 @@ textarea {
 .description {
   font-size: .9rem;
   line-height: 1.6;
-  text-align: start;
+  text-align: justify;
   color: rgb(44, 40, 40);
   font-weight: 550;
   font-family: "Josefin Sans", sans-serif;
@@ -617,8 +615,8 @@ textarea {
   display:none;
 }
 .about-circle {
-  width: 180px;
-  height: 180px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   background: #ebeef0fa;
   border:5px solid #d3dee2;
@@ -632,24 +630,23 @@ textarea {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 10;
   position: absolute;
-  left: -20%;
-  top: 30%;
+  left: -10%;
+  top: 25%;
 }
 
 .about-box {
   position: absolute;
-  width: 300px;
+  width: 200px;
   background-color: rgba(255, 255, 255, 0.89);
   color: #333;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 10px;
-  padding: 15px 25px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   gap: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
 }
 
 .about-box span {
@@ -666,8 +663,8 @@ textarea {
 }
 
 .about-box-1 {
-  top: 100px;
-  left: 40px;
+  top: 50px;
+  left: 10px;
   background: #e8eceecc;
   border:2px solid #d3dee2;
   outline:2px solid #ACB6BA;
@@ -675,9 +672,8 @@ textarea {
 }
 
 .about-box-2 {
-  top: 180px;
-  left: 80px;
-  width: 250px !important;
+  top: 150px;
+  left: 90px;
   background: #e8eceecc;
   border:2px solid #d3dee2;
   outline:2px solid #ACB6BA;
@@ -685,8 +681,8 @@ textarea {
 }
 
 .about-box-3 {
-  top: 260px;
-  left: 60px;
+  top: 230px;
+  left: 10px;
   background: #e8eceecc;
   border:2px solid #d3dee2;
   outline:2px solid #ACB6BA;
@@ -746,13 +742,13 @@ textarea {
     height: 100px;
     font-size: 1rem;
     font-weight: bold;
-    left: -5%;
-    top: 38%;
+    left: 0%;
+    top: 29%;
   }
   
   .about-box {
     position: absolute;
-    width: 200px;
+    width: 160px;
     background-color: rgba(255, 255, 255, 0.89);
     color: #333;
   }
@@ -761,21 +757,6 @@ textarea {
     width: 25px;
     height: 25px;
     font-size: 1rem;
-  }
-
-  .about-box-1 {
-    top: 120px;
-    left: 0;
-  }
-
-  .about-box-2 {
-    top: 200px;
-    left: 70px;
-  }
-
-  .about-box-3 {
-    top: 260px;
-    left: 0;
   }
 }
 @media(min-width:1000px) and (max-width:1250px){
@@ -787,6 +768,67 @@ textarea {
     align-items: center;
     justify-content: space-evenly;
     clip-path: circle(75.0% at 25% 47%);
+  }
+}
+@media(min-width:1600px) and (max-width:3000px){
+  .overlay {
+    background:#95c8feaf;
+    width: 100% !important;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    clip-path: circle(75.0% at 25% 47%);
+  }
+  .about-card {
+    width: 620px;
+    height: 380px;
+  }
+  .about-container {
+    position: relative;
+    width: 400px;
+    height: 450px;
+  }
+  .about-circle {
+    width: 170px;
+    height: 170px;
+    font-size: 1.4rem;
+    left: -40%;
+    top: 21%;
+  }
+  
+  .about-box {
+    position: absolute;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.89);
+    color: #333;
+  }
+  .about-box-1 {
+    top: 50px;
+    left: -35px;
+    font-size: 1rem;
+  }
+  
+  .about-box-2 {
+    top: 145px;
+    left: 5px;
+    font-size:1rem;
+    height: 60px;
+  }
+  
+  .about-box-3 {
+    top: 230px;
+    left: -35px;
+    font-size: 1rem;
+  }
+  
+  .about-box span {
+    width: 25px;
+    height: 25px;
+    font-size: 1rem;
+  }
+  .description {
+    font-size: 1rem;
   }
 }
 .core-val h1{
@@ -1238,14 +1280,14 @@ textarea {
   background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
 }
 .top-left {
-  top: -150px;
+  top: -180px;
   position: absolute;
   clip-path: polygon(50% 50%, 0 0, 100% 0);
 }
 
 .top-right {
   position: absolute;
-  bottom: -150px;
+  bottom: -180px;
   clip-path: polygon(50% 50%, 0 100%, 100% 100%);
 }
 
