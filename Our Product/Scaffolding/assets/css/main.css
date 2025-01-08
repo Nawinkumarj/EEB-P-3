@@ -873,6 +873,7 @@ section,
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .featured-services .service-item:hover {
@@ -962,7 +963,9 @@ section,
     text-align: justify;
   }
 }
-
+.about .tab-content p{
+  text-align: justify;
+}
 .about .tab-content h4 {
   font-size: 18px;
   margin: 0;
@@ -1081,7 +1084,7 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-@media(max-width:500px){
+/* @media(max-width:500px){
   .services .details {
     background: color-mix(in srgb, var(--surface-color), transparent 5%);
     padding: 50px 30px;
@@ -1093,7 +1096,7 @@ section,
     box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
     min-height: 300px;
   }
-}
+} */
 .services .img {
   border-radius: 8px;
   overflow: hidden;
@@ -1218,10 +1221,11 @@ section,
 }
 
 .contact .php-email-form .form-group {
-  padding-bottom: 8px;
+  padding-bottom: 8px;l
 }
 
 .contact .php-email-form input[type=text],
+.contact .php-email-form input[type=tel],
 .contact .php-email-form input[type=email],
 .contact .php-email-form textarea {
   border-radius: 0px;
@@ -1232,12 +1236,14 @@ section,
 }
 
 .contact .php-email-form input[type=text]:focus,
+.contact .php-email-form input[type=tel]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
 .contact .php-email-form input[type=text],
+.contact .php-email-form input[type=tel],
 .contact .php-email-form input[type=email] {
   height: 48px;
   padding: 10px 15px;
