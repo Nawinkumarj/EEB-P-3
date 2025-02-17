@@ -22,10 +22,31 @@
     /*------------------
         Background Set
     --------------------*/
-    $('.set-bg').each(function () {
-        var bg = $(this).data('setbg');
-        $(this).css('background-image', 'url(' + bg + ')');
+    // $('.set-bg').each(function () {
+    //     var bg = $(this).data('setbg');
+    //     $(this).css('background-image', 'url(' + bg + ')');
+    // });
+  $(document).ready(function () {
+    // Array of image paths
+    var imagePaths = [
+    "Img/why/wc5.png",
+    "Img/why/wc6.png",
+      "Img/why/wc1.png",
+      "Img/why/wc2.png",
+      "Img/why/wc8.png",
+      "Img/why/wc4.png",
+      "Img/why/wc3.png",
+      "Img/why/wc7.png",
+      
+      
+    ];
+
+    // Loop through each .set-bg element and set the background image
+    $(".set-bg").each(function (index) {
+      var bgImage = imagePaths[index]; // Get the image path based on the index
+      $(this).css("background-image", "url(" + bgImage + ")"); // Set the background image
     });
+  });
 
     /*------------------
 		Navigation

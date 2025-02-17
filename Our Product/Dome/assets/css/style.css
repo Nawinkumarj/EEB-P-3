@@ -143,12 +143,19 @@ a {
     height: 10px;
 }
 .section-header .section-title {
-    font-size: 35px;
+    font-size: 32px;
     font-weight: 400;
     color: var(--primary);
     line-height: 60px;
     letter-spacing: -2px;
     margin: 0;
+}
+@media(max-width:600px){
+    .section-header .section-title {
+            font-size: 25px;
+            line-height: 40px;
+            letter-spacing: -1px;
+        }
 }
 .section-title.section-title2 {
     background: linear-gradient(90deg, #fff 16%, #4d4d4d 140%);
@@ -169,6 +176,7 @@ a {
 .section-header.section-header2 .section-subtitle {
     justify-content: center;
     margin-bottom: 32px;
+    overflow: visible;
 }
 .section-header .section-desc {
     font-size: 14px;
@@ -217,7 +225,8 @@ a {
     margin-top: -10px;
 }
 .preloader-wrap video {
-    max-width: 100%}
+    max-width: 100%
+}
 .preloader-wrap {
     position: fixed;
     left: 0;
@@ -257,7 +266,7 @@ a {
     font-size: 20px;
 }
 .header-menu-wrap .logo img {
-    max-width: 81px;
+    width: 200px;
     display: block;
 }
 .header-menu-wrap .navbar .menu {
@@ -681,12 +690,20 @@ a {
     overflow: hidden;
     height: 390px;
 }
+ .img-box video {
+     width: 100%;
+     height: fit-content;
+     height: auto;
+     border-radius: 8px;
+     display: block;
+ }
 .team-member-box .content {
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
 }
+
 .team-member-box .content .name {
     display: block;
     font-size: 20px;
@@ -812,6 +829,24 @@ a {
     overflow: hidden;
     position: sticky;
     padding: 12px 12px 30px;
+}
+@media(max-width:768px){
+    .feature-project {
+        height:  !important;
+    }
+    .feature-project .img-box {
+        height: fit-content !important;
+    }
+    .feature-project .img-box  video{
+        height: 100% !important;
+        width: 100% !important;
+    }
+
+}
+@media(max-width:600px){
+    .feature-project {
+        height: 50vh !important;
+    }
 }
 .feature-project .hover_mouse {
     position: absolute;
@@ -1136,6 +1171,11 @@ a {
 }
 .service-box .service-inner .service-feature-lists span {
     display: block;
+}
+@media(max-width:600px){
+.service-box .service-inner .service-img-box img {
+        display: none;
+    }
 }
 .service-box .service-inner .service-img-box {
     padding: 0 72px;

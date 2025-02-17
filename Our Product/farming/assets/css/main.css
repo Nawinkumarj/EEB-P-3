@@ -167,12 +167,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: all .5s;
   z-index: 997;
 }
-.header .logo {
+/* .header .logo {
   line-height: 1;
-}
+} */
 .header .logo img {
-  max-height: 32px;
-  margin-right: 8px;
+ width: 220px;
 }
 .header .logo h1 {
   font-size: 30px;
@@ -351,9 +350,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer-links ul {
   display: flex;
+  flex-wrap: wrap !important;
   list-style: none;
   gap: 20px;
-  width: 500px;
+  width: 100%;
   padding-left: 0;
 }
 .footer-links ul a {
@@ -675,7 +675,14 @@ to {
   padding: 7rem 0;
 }
 .about .content .img-overlap {
-  margin-top: -150px;
+   width: 100%;
+   height: 80%;
+}
+@media(max-width:991px){
+  .about .content .img-overlap {
+    width: 100%;
+    height: 100%;
+ }
 }
 .about p {
   color: var(--contrast-color);

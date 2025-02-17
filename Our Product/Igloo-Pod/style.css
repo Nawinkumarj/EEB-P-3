@@ -79,6 +79,9 @@ a:hover {
   padding-left: 6rem;
   padding-right: 6rem;
 }
+.logo{
+  width: 200px !important;
+}
 @media (max-width:1400px) {
   .padding-side {
   padding-left: 5rem;
@@ -368,6 +371,7 @@ svg.play-icon {
 }
 .footerNav {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   list-style: none;
   margin-left: -20px;
@@ -399,7 +403,12 @@ svg.play-icon {
   .featureContainer {
   grid-template-columns: repeat(1, 1fr);
 }
-}.inputFlex {
+}
+.inputFlex {
   display: flex;
   gap: 10px;
+}
+.img-fluid {
+  object-fit: cover;
+  width: 100%;
 }

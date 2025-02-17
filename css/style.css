@@ -1240,6 +1240,8 @@ textarea {
 }
 .top-cont-img img{
   border-radius: 20px;
+  height: 400px;
+  object-fit: cover;
 }
 .top-cont-img .service-inner-cont {
   position: absolute;
@@ -1283,12 +1285,14 @@ textarea {
   top: -180px;
   position: absolute;
   clip-path: polygon(50% 50%, 0 0, 100% 0);
+  opacity: 0;
 }
 
 .top-right {
   position: absolute;
-  bottom: -180px;
+  bottom: -80px;
   clip-path: polygon(50% 50%, 0 100%, 100% 100%);
+  opacity: 0;
 }
 
 .bottom-left {
@@ -1296,6 +1300,7 @@ textarea {
   left: -260px;
   position: absolute;
   clip-path: polygon(50% 50%, 0 0, 0 100%);
+  opacity: 0;
 }
 
 .bottom-right {
@@ -1303,24 +1308,32 @@ textarea {
   top: 0px;
   position: absolute;
   clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+  opacity: 0;
 }
-
-.top-cont-img :hover .top-left{
+.top-cont-img:hover .service-inner-cont {
+  opacity: 1;
+  color: white;
+}
+.top-cont-img:hover .top-left{
   top: 0px;
+  opacity: 1;
 }
 
-.top-cont-img :hover .top-right {
+.top-cont-img:hover .top-right {
   bottom: 0px;
+  opacity: 1;
 }
 
-.top-cont-img :hover .bottom-left {
+.top-cont-img:hover .bottom-left {
   top: 0;
   left: 0px;
+  opacity: 1;
 }
 
-.top-cont-img :hover .bottom-right {
+.top-cont-img:hover .bottom-right {
   right: 0px;
   top: 0px;
+  opacity: 1;
 }
 @media (max-width:500px){
   .service-inner-cont p{
@@ -2314,6 +2327,7 @@ footer {
  display: flex;
  justify-content: space-between;
  width: 300px;
+ z-index: 999;
 }
 .footerNav .foot-item{
   display: flex;
@@ -2344,6 +2358,7 @@ footer {
 .footerIcon {
   display: flex;
   margin: 10px;
+  z-index: 999;
 }
 
 @media (min-width: 768px) {
@@ -2351,12 +2366,14 @@ footer {
   .footerNav
    {
     margin-top: -100px;
+
   }
 }
 
 .footerIcon div {
   margin: 10px;
   width: 52px;
+  z-index: 999;
   height: 50px;
   border-radius: 30%;
   cursor: pointer;
@@ -2372,6 +2389,7 @@ footer {
 
 .footerIcon div a {
   color: white !important;
+  z-index: 999;
 }
 
 .fb{
@@ -2420,6 +2438,10 @@ footer {
     padding: 0;
     height: 270px;
   }
+  .footerNav{
+    margin-top: 10%;
+    justify-content: space-evenly;
+  }
   .footerNav a {
     font-size: 13px;
     margin: 0 10px;
@@ -2432,6 +2454,8 @@ footer {
     font: 15px;
     width: 45px;
     height: 45px;
+    z-index: 999;
+    position: relative;
   }
   .foot-img img {
     height: 50%;
@@ -3978,13 +4002,14 @@ background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 .main-slider .swiper-slide img{
   position: absolute;
   bottom: 0;
-  right: 5%;
-  height: 85vh;
+  right: 10%;
+  height: 83vh;
   object-fit: cover;
 }
 .team-small-img{
   width: 100% !important;
   object-position: top;
+  /* background-color: #78a1db; */
 }
 .text{
   position: absolute;
@@ -4300,7 +4325,7 @@ background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
 }
 
 .hero-carousel .list .item .main-content .content h2 {
-  font-size: 6rem;
+  font-size: 5.2rem;
   letter-spacing: 3px;
   font-family: "Bebas Neue", sans-serif;
   /* font-family: "Righteous", sans-serif; */

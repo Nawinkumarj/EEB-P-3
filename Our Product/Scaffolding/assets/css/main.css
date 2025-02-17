@@ -1102,14 +1102,14 @@ section,
   overflow: hidden;
 }
 
-.services .img img {
+/* .services .img img {
   transition: 0.6s;
-}
+} */
 
 .services .details {
   background: color-mix(in srgb, var(--surface-color), transparent 5%);
   padding: 50px 30px;
-  margin: -100px 30px 0 30px;
+  margin: 10px 30px 0 30px;
   transition: all ease-in-out 0.3s;
   position: relative;
   text-align: center;
@@ -1173,7 +1173,7 @@ section,
 --------------------------------------------------------------*/
 .contact .info {
   background-color: var(--surface-color);
-  padding: 40px;
+  padding: 20px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
@@ -1189,10 +1189,10 @@ section,
   font-size: 15px;
 }
 
-.contact .info-item+.info-item {
-  padding-top: 20px;
+.contact .info-item{
+  padding-bottom: 20px;
   margin-top: 20px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .contact .info-item i {
@@ -1221,7 +1221,7 @@ section,
 }
 
 .contact .php-email-form .form-group {
-  padding-bottom: 8px;l
+  padding-bottom: 8px;
 }
 
 .contact .php-email-form input[type=text],
@@ -1419,4 +1419,13 @@ section,
 .footer-top{
   background-color: var(--accent-color);
   padding: 20px 0px;
+}
+
+.footerIcon{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.footerIcon i{
+   font-size: 20px;
 }
