@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fruitables - Vegetable Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
+        rel="stylesheet">
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar start -->
+    <div class="container-fluid fixed-top">
+        <div class="container topbar bg-primary d-none d-lg-block">
+            <div class="d-flex justify-content-between">
+                <div class="top-info ps-2">
+                    <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#"
+                            class="text-white">123 Street, New York</a></small>
+                    <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#"
+                            class="text-white">Email@Example.com</a></small>
+                </div>
+                <div class="top-link pe-2">
+                    <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
+                    <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
+                    <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
+                </div>
+            </div>
+        </div>
+        <div class="container px-0">
+            <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                <a href="index.html" class="navbar-brand">
+                    <img src="Img/img/Logo/l-1.png" width="150px" />
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="about.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">About Us</a>
+                            <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                <a href="learnhydrophonics.html" class="nav-item nav-link">Learn Hydroponics</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products Categories</a>
+                            <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                <a href="cart.html" class="dropdown-item">Cart</a>
+                                <a href="chackout.html" class="dropdown-item">Chackout</a>
+                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+
+                        <a href="shop-detail.html" class="nav-item nav-link">Services</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                    <div class="d-flex m-3 me-0">
+                        <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4"
+                            data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                        <a href="#" class="position-relative me-4 my-auto">
+                            <i class="fa fa-shopping-bag fa-2x"></i>
+                            <span
+                                class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1"
+                                style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                        </a>
+                        <a href="#" class="my-auto">
+                            <i class="fas fa-user fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+        <!-- Single Page Header start -->
+        <div class="container-fluid page-header py-5">
+            <h1 class="text-center text-white display-6">Learn Hydrophonics</h1>
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active text-white">Learn Hydrophonics</li>
+            </ol>
+        </div>
+        <!-- Single Page Header End -->
+
+
+    <section class="about-one">
+        <div class="about-one__shape" style="background-image: url(assets/images/resources/about-1-shape-1.png);"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-one__image wow fadeInLeft" data-wow-delay="200ms">
+                        <img src="Img/img/IMG-20240708-WA0062.jpg" alt="alefox">
+                        <div class="about-one__image__two">
+                            <img src="Img/img/1M7A9974.JPG" alt="alefox">
+                        </div>
+                        <div class="about-one__image__three ">
+                            <img src="Img/img/Logo/l-1.png" alt="logo">
+                        </div>
+                    </div>
+                    <!-- /.about-one__image -->
+                </div>
+                <!-- /.col-lg-6 -->
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="300ms">
+                    <div class="about-one__content">
+                        <div class="sec-title text-left">
+    
+                            <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-leaf"
+                                    style="background-image: url(Img/img/Logo/l-2.png);"></span>Learn Hydrophonics<span
+                                    class="sec-title__tagline__right-leaf"
+                                    style="background-image: url(assets/images/shapes/leaf.png);"></span></h6>
+                            <!-- /.sec-title__tagline -->
+    
+                            <h3 class="sec-title__title bw-split-in-left">This Organic of Agriculture About Food Market.
+                            </h3>
+                            <!-- /.sec-title__title -->
+                        </div>
+                        <!-- /.sec-title -->
+                        <p class="about-one__content__text">
+                            Organic address a range of simply application and infrastructure this of passages of available,
+                            but the majority have suffered poor alteration in some form.
+                        </p>
+                        <div class="about-one__content__quote">
+                            <i class="fa-solid fa-seedling"></i> There are many variations of passages of available but the have
+                            suffered alteration in some form.
+                        </div>
+                        <div class="about-one__content__border"></div>
+                        <ul class="about-one__content__list">
+                            <li><span class="icon-check-mark"><i class="fa-regular fa-circle-check"></i></span>There are many variations of pass available.</li>
+                            <li><span class="icon-check-mark"><i class="fa-regular fa-circle-check"></i></span>Organic Return Policy Money back guarantee</li>
+                            <li><span class="icon-check-mark"><i class="fa-regular fa-circle-check"></i></span>Atiam rhoncus sit amet adip scing sed ipsum.</li>
+                        </ul>
+                        <!-- <a href="about.html" class="alefox-btn">
+                            <span class="alefox-btn__item"></span>
+                            <span class="alefox-btn__item"></span>
+                            <span class="alefox-btn__item"></span>
+                            <span class="alefox-btn__item"></span>
+                            About More
+                        </a> -->
+                    </div>
+                    <!-- /.why-choose-two__content -->
+                </div>
+                <!-- /.col-lg-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.about-one -->
+    
+    <section class="funfact-one funfact-one--about">
+        <div class="container">
+            <ul class="list-unstyled funfact-one__list">
+                <li>
+                    <div class="funfact-one__list__icon"><span class="fa fa-leaf"></span></div> <!-- Icon for Healthy Food -->
+                    <div class="funfact-one__list__content">
+                        <h5 class="funfact-one__list__number count-box"><span class="count-text" data-stop="99"
+                                data-speed="1500"></span>20+</h5>
+                        <p class="funfact-one__list__text">Healthy Food</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="funfact-one__list__icon"><span class="fa fa-users"></span></div> <!-- Icon for Expert Team -->
+                    <div class="funfact-one__list__content">
+                        <h5 class="funfact-one__list__number count-box"><span class="count-text" data-stop="68"
+                                data-speed="1500"></span>30+</h5>
+                        <p class="funfact-one__list__text">Expert Team</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="funfact-one__list__icon"><span class="fa fa-apple-alt"></span></div> <!-- Icon for Food Now -->
+                    <div class="funfact-one__list__content">
+                        <h5 class="funfact-one__list__number count-box"><span class="count-text" data-stop="789"
+                                data-speed="1500"></span>11+</h5>
+                        <p class="funfact-one__list__text">Food Now</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="funfact-one__list__icon"><span class="fa fa-seedling"></span></div> <!-- Icon for Food Organic -->
+                    <div class="funfact-one__list__content">
+                        <h5 class="funfact-one__list__number count-box"><span class="count-text" data-stop="424"
+                                data-speed="1500"></span>7+</h5>
+                        <p class="funfact-one__list__text">Food Organic</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.funfact-one -->
+    
+    
+    <!-- /.testimonials-one -->
+    
+    <section class="faq-one">
+        <div class="" >
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="faq-one__content">
+                        <div class="sec-title text-left">
+    
+                            <h6 class="sec-title__tagline bw-split-in-right"><span class="sec-title__tagline__left-leaf"
+                                    style="background-image: url(assets/images/shapes/leaf.png);"></span>Faq Us<span
+                                    class="sec-title__tagline__right-leaf"
+                                    style="background-image: url(assets/images/shapes/leaf.png);"></span></h6>
+                            <!-- /.sec-title__tagline -->
+    
+                            <h3 class="sec-title__title bw-split-in-left">We Are Any Question Faq Please Organic Food</h3>
+                            <!-- /.sec-title__title -->
+                        </div>
+                        <!-- /.sec-title -->
+                        <!-- section-title -->
+                        <p class="faq-one__content__text">
+                            Organic address a range of simply application and infrastructure this of passages of available,
+                            but the majority have suffered poor alteration in some form.
+                        </p>
+                        <div class="faq-one__accordion alefox-accrodion" data-grp-name="alefox-accrodion">
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4>
+                                        <span class="accrodion-title__number"></span> Agriculture Food Why is it important ?
+                                        <span class="title_icon"></span>
+                                        <!-- /.accrodion-title__icon -->
+                                    </h4>
+                                </div>
+                                <!-- /.accordian-title -->
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>
+                                            Organic address a range of simply application infrastructure of of available,
+                                            but the majority have suffered.
+                                        </p>
+                                    </div>
+                                    <!-- /.accordian-content -->
+                                </div>
+                            </div>
+                            <!-- /.accordian-item -->
+                            <div class="accrodion active">
+                                <div class="accrodion-title">
+                                    <h4>
+                                        <span class="accrodion-title__number"></span> Bennings Appetite This Disposed ?
+                                        <span class="title_icon"></span>
+                                        <!-- /.accrodion-title__icon -->
+                                    </h4>
+                                </div>
+                                <!-- /.accordian-title -->
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>
+                                            Organic address a range of simply application infrastructure of of available,
+                                            but the majority have suffered.
+                                        </p>
+                                    </div>
+                                    <!-- /.accordian-content -->
+                                </div>
+                            </div>
+                            <!-- /.accordian-item -->
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4>
+                                        <span class="accrodion-title__number"></span> Reprehenderit in voluptate ?
+                                        <span class="title_icon"></span>
+                                        <!-- /.accrodion-title__icon -->
+                                    </h4>
+                                </div>
+                                <!-- /.accordian-title -->
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>
+                                            Organic address a range of simply application infrastructure of of available,
+                                            but the majority have suffered.
+                                        </p>
+                                    </div>
+                                    <!-- /.accordian-content -->
+                                </div>
+                            </div>
+                            <!-- /.accordian-item -->
+                            <div class="accrodion">
+                                <div class="accrodion-title">
+                                    <h4>
+                                        <span class="accrodion-title__number"></span> Refresing to get such a touch ?
+                                        <span class="title_icon"></span>
+                                        <!-- /.accrodion-title__icon -->
+                                    </h4>
+                                </div>
+                                <!-- /.accordian-title -->
+                                <div class="accrodion-content">
+                                    <div class="inner">
+                                        <p>
+                                            Organic address a range of simply application infrastructure of of available,
+                                            but the majority have suffered.
+                                        </p>
+                                    </div>
+                                    <!-- /.accordian-content -->
+                                </div>
+                            </div>
+                            <!-- /.accordian-item -->
+                        </div>
+                    </div>
+                    <!-- /.faq-one__contact -->
+                </div>
+                <!-- /.col-lg-6 -->
+                <div class="col-xl-6">
+                    <div class="faq-one__image wow fadeInUp">
+                        <img src="Img/img/IMG-20241107-WA0024.jpg" alt="alefox" >
+                        <!-- <div class="faq-one__image__shape-one wow fadeInLeft" data-wow-delay="300ms">
+                            <img src="assets/images/shapes/faq-shape.png" alt="alefox">
+                        </div>
+                        <div class="faq-one__image__shape-two wow fadeInRight" data-wow-delay="200ms">
+                            <img src="assets/images/shapes/faq-shape-2.png" alt="alefox"> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.faq-one -->
+    
+    <section class="skill-one">
+        <div class="skill-one__bg" style="background-image: url(Img/img/IMG20240823100552.jpg);"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5">
+                    <div class="alefox-stretch-element-inside-column">
+                        <div class="skill-one__image wow slideInLeft">
+                            <img src="Img/img/IMG-20240924-WA0023.jpg" alt="alefox">
+                            <a href="#" class="video-popup">
+                                <i class="fa-regular fa-circle-play"></i>
+                                <i class="ripple"></i>
+                            </a>
+                        </div>
+                        <!-- /.skill-one__image -->
+                    </div>
+                    <!-- /.stretch-element-inside-column -->
+                    <ul class="skill-one__wrapper wow fadeInUp">
+                        <li>
+                            <div class="progress-box">
+                                <div class="graph-outer">
+                                    <input type="text" class="dial" data-fgColor="#f6f6f6" data-bgColor="#5eab70"
+                                        data-width="104" data-height="104" data-linecap="normal" value="30">
+                                    <div class="inner-text count-box">
+                                        <span class="count-text" data-stop="50" data-speed="2000"></span><span
+                                            class="count-Parsent">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="skill-one__wrapper__title">Farmed</h5>
+                        </li>
+                        <li>
+                            <div class="progress-box">
+                                <div class="graph-outer">
+                                    <input type="text" class="dial" data-fgColor="#f6f6f6" data-bgColor="#5eab70"
+                                        data-width="104" data-height="104" data-linecap="normal" value="80">
+                                    <div class="inner-text count-box">
+                                        <span class="count-text" data-stop="80" data-speed="2000"></span><span
+                                            class="count-Parsent">20%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="skill-one__wrapper__title">Agriculture</h5>
+                        </li>
+                        <li>
+                            <div class="progress-box">
+                                <div class="graph-outer">
+                                    <input type="text" class="dial" data-fgColor="#f6f6f6" data-bgColor="#5eab70"
+                                        data-width="104" data-height="104" data-linecap="normal" value="50">
+                                    <div class="inner-text count-box">
+                                        <span class="count-text" data-stop="72" data-speed="2000"></span><span
+                                            class="count-Parsent">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="skill-one__wrapper__title"> Harvest</h5>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.col-xl-5 -->
+                <div class="col-xl-7">
+                    <div class="skill-one__content wow fadeInRight">
+                        <div class="skill-one__content__shape"
+                            style="background-image: url(assets/images/shapes/skill-1-shape.png);"></div>
+                        <h3 class="skill-one__content__title">We Organic Best Healthy Skill This Products.</h3>
+                        <p class="skill-one__content__text">
+                            Organic address a range of simply application and infrastructure this of passages of available,
+                            but the majority have suffered poor alteration in some form.
+                        </p>
+                        <ul class="skill-one__content__list">
+                            <li><span class="icon-check-mark"><i class="fa-regular fa-circle-check"></i></span>If you are going to use a this passage</li>
+                            <li><span class="icon-check-mark"><i class="fa-regular fa-circle-check"></i></span>We provide a revolutionary level of Food</li>
+                            <li><span class="icon-check-mark"><i class="fa-regular fa-circle-check"></i></span>Various versions have evolved the food</li>
+                        </ul>
+                        <a href="contact.html" class="dics-btn">
+                            Discover More
+                        </a>
+                    </div>
+                </div>
+                <!-- /.col-xl-7 -->
+            </div>
+        </div>
+    </section>
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+    <div class="container py-5">
+        <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+            <div class="row g-4">
+                <div class="col-lg-3">
+                    <a href="#">
+                        <img src="Img/img/Logo/l-1.png" class="footerLogo" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative mx-auto">
+                        <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number"
+                            placeholder="Your Email">
+                        <button type="submit"
+                            class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white"
+                            style="top: 0; right: 0;">Subscribe Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="d-flex justify-content-end pt-3">
+                        <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                                class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item">
+                    <h4 class="text-light mb-3">Why People Like us!</h4>
+                    <p class="mb-4">Welcome to the future of farming! Our Hydroponic Innovation is here to redefine the
+                        way you grow. Say goodbye to soil constraints and embrace a smarter</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column text-start footer-item">
+                    <h4 class="text-light mb-3">Shop Info</h4>
+                    <a class="btn-link" href="">Product Categories</a>
+                    <a class="btn-link" href="">Our Services</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column text-start footer-item">
+                    <h4 class="text-light mb-3">Account</h4>
+                    <a class="btn-link" href="">My Account</a>
+                    <a class="btn-link" href="">Shopping Cart</a>
+                    <a class="btn-link" href="">Wishlist</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item">
+                    <h4 class="text-light mb-3">Contact</h4>
+                    <p>Located In Heart of Chennai</p>
+                    <p>Email: engg.suite@eebedcs.com</p>
+                    <p>Phone: +91 74184 33318</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/progress-bar/knob.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
